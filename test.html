@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            list-style: none;
+        }
+        nav{
+            width: 100%;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        #Submenu{
+            display: none;
+            position: absolute;
+            background-color: aqua;
+        }
+        nav ul li:hover #Submenu{
+            display: block;
+        }
+        nav ul li ul{
+            padding: 12px;
+            border-radius: 12px;
+        }
+        nav ul li ul li{
+            text-align: start;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>drop1
+                <ul id="Submenu">
+                    <li>ฟหกฟหกกฟก</li>
+                    <li>more</li>
+                    <li>more</li>
+                </ul>
+            </li>
+            <li>drop1
+                <ul id="Submenu">
+                    <li>more</li>
+                    <li>more</li>
+                    <li>more</li>
+                </ul>
+            </li>
+            
+            <li>drop1
+                <ul id="Submenu">
+                    <li>more</li>
+                    <li>more</li>
+                    <li>more</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
